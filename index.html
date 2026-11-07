@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bumi, a black lab mix pet UGC creator. Sample ads, formats and contact.">
+<title>Bumi UGC Portfolio</title>
+<meta property="og:title" content="Bumi UGC Portfolio">
+<meta property="og:description" content="Pet UGC from Bumi, a real black lab mix: product demos, treat reactions and cozy at-home moments. English and Spanish.">
+<meta property="og:image" content="https://speedybumi.github.io/videos/bacon-bone.jpg">
+<meta property="og:url" content="https://speedybumi.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow column; a dark "coat" band for the intro, then a 3-up row of phone-shaped video frames, then plain info rows. */
+:root{
+  --bg:#eef1f4; --surface:#ffffff; --ink:#15171b; --muted:#5b6370;
+  --coat:#15171b; --coat-ink:#f3f5f7; --toy:#2a7fd4; --treat:#c06f22; --line:#d6dbe1;
+  --display:"Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1114; --surface:#181b20; --ink:#e9ecef; --muted:#9aa3ae;
+  --coat:#05070a; --coat-ink:#f3f5f7; --toy:#5aa8f2; --treat:#e0954d; --line:#2a2f36; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1114; --surface:#181b20; --ink:#e9ecef; --muted:#9aa3ae;
+  --coat:#05070a; --coat-ink:#f3f5f7; --toy:#5aa8f2; --treat:#e0954d; --line:#2a2f36; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.coat{background:var(--coat);color:var(--coat-ink)}
+.coat .wrap{padding-block:56px 48px;display:grid;gap:14px}
+.eyebrow{font:600 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--toy)}
+h1{font:800 clamp(52px,11vw,104px)/.9 var(--display);letter-spacing:-.03em;margin:0;text-wrap:balance}
+.lede{font-size:clamp(17px,2.4vw,20px);max-width:58ch;margin:0;color:#c9ced5}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tag{border:1px solid #3a4049;border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe3e8}
+main .wrap{padding-block:44px 64px;display:grid;gap:56px}
+h2{font:800 clamp(26px,4vw,34px)/1.1 var(--display);margin:0 0 6px;letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 22px;max-width:62ch}
+.reel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:760px){.reel{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.reel{grid-template-columns:minmax(0,1fr)}}
+figure{margin:0;display:grid;gap:10px;min-width:0}
+.phone{aspect-ratio:9/16;max-width:100%;border-radius:22px;overflow:hidden;background:var(--coat);border:6px solid var(--coat);box-shadow:0 10px 30px rgba(10,14,20,.18)}
+.phone video{width:100%;height:100%;object-fit:cover;display:block}
+.kind{font:600 12px/1 var(--body);letter-spacing:.1em;text-transform:uppercase}
+.kind.toy{color:var(--toy)} .kind.treat{color:var(--treat)}
+figcaption strong{display:block;font:600 17px/1.3 var(--body);margin-top:4px}
+figcaption span{color:var(--muted);font-size:14px}
+.rows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px}
+@media (max-width:640px){.rows{grid-template-columns:minmax(0,1fr)}}
+.rows ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.rows h3{font:600 13px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.facts{display:grid;gap:4px;margin:0}
+.facts div{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-block:9px}
+.facts dt{color:var(--muted)} .facts dd{margin:0;text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+a{color:var(--toy);text-underline-offset:3px}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;display:grid;gap:12px}
+.mailrow{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.mail{font:600 clamp(18px,3vw,22px)/1.2 var(--body);user-select:all;word-break:break-all}
+button{font:600 14px/1 var(--body);background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:10px 16px;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid var(--toy);outline-offset:3px}
+footer{color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+
+
+<header class="coat">
+  <div class="wrap">
+    <div class="eyebrow">Pet UGC creator · New Jersey, USA</div>
+    <h1>Bumi</h1>
+    <p class="lede">A real black lab mix testing real products. Short vertical videos for pet brands: toy tests, treat reactions and cozy at-home moments, filmed and edited by his owner, Marco.</p>
+    <div class="tags">
+      <span class="tag">Faceless or hands-only</span>
+      <span class="tag">English &amp; Spanish</span>
+      <span class="tag">9:16 vertical</span>
+      <span class="tag">Edited or raw clips</span>
+      <span class="tag">Dog products</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section>
+      <h2>Sample ads</h2>
+      <p class="sub">Tap to play. Each is about 12 seconds: a hook in the first 2 seconds, the product in use, then a clear payoff line. Shot on iPhone with no music, so your team can add its own sound.</p>
+      <div class="reel">
+        <figure>
+          <div class="phone"><video src="videos/bacon-bone.mp4" poster="videos/bacon-bone.jpg" controls playsinline muted preload="none"></video></div>
+          <figcaption><span class="kind toy">Product demo · Chew toy</span><strong>The bacon-scented bone</strong><span>Grip and tug-of-war shown up close, ending on "he won't give it back."</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><video src="videos/treat-ritual.mp4" poster="videos/treat-ritual.jpg" controls playsinline muted preload="none"></video></div>
+          <figcaption><span class="kind treat">Reaction · Treats</span><strong>The treat ritual</strong><span>A step-by-step format built around his real habit of rolling on every good treat.</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><video src="videos/cozy-blanket.mp4" poster="videos/cozy-blanket.jpg" controls playsinline muted preload="none"></video></div>
+          <figcaption><span class="kind toy">Problem / solution · Comfort</span><strong>The blanket thief</strong><span>Owner problem first ("he steals my blankets"), then the fix: get him his own.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="rows">
+      <div>
+        <h3>What I make</h3>
+        <ul>
+          <li>Product demos: toys, chews, beds, gear, bowls</li>
+          <li>First reactions and unboxings</li>
+          <li>Problem / solution and step-by-step formats</li>
+          <li>Everyday lifestyle clips (walks, naps, mealtime)</li>
+          <li>2–3 hook options per video for ad testing</li>
+          <li>15–60 second cuts to fit your brief</li>
+          <li>English or Spanish on-screen text</li>
+          <li>Raw clips available on request</li>
+        </ul>
+      </div>
+      <div>
+        <h3>About Bumi</h3>
+        <dl class="facts">
+          <div><dt>Breed</dt><dd>Black lab mix</dd></div>
+          <div><dt>Known for</dt><dd>Fetch, but keeps the toy</dd></div>
+          <div><dt>Also loves</dt><dd>Sunbathing, naps, treats</dd></div>
+          <div><dt>Posts on</dt><dd><a href="https://www.tiktok.com/@speedybumi" target="_blank" rel="noopener">TikTok @speedybumi</a></dd></div>
+          <div><dt></dt><dd><a href="https://www.youtube.com/@speedybumi" target="_blank" rel="noopener">YouTube @speedybumi</a></dd></div>
+          <div><dt>Top Short</dt><dd>7K+ views</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="c">
+      <h2 id="c">Work with Bumi</h2>
+      <div class="mailrow">
+        <span class="mail" id="mail">bumi20947@gmail.com</span>
+        <button type="button" id="copy">Copy email</button>
+      </div>
+      <p class="sub" style="margin:0">Send the product and a brief, and I'll send back the finished video. Rates on request.</p>
+    </section>
+
+    <footer>Marco &amp; Bumi · New Jersey, USA</footer>
+  </div>
+</main>
+
+<script>
+document.getElementById('copy').addEventListener('click', function(){
+  var b=this, t=document.getElementById('mail').textContent;
+  function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy email'},1600)}
+  function pick(){var r=document.createRange();r.selectNodeContents(document.getElementById('mail'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected, press copy'}
+  try{navigator.clipboard.writeText(t).then(done,pick)}catch(e){pick()}
+});
+document.querySelectorAll('video').forEach(function(v){v.addEventListener('play',function(){document.querySelectorAll('video').forEach(function(o){if(o!==v)o.pause()})})});
+</script>
+
+</body>
+</html>
