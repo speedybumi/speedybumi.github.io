@@ -67,6 +67,12 @@ a{color:var(--toy);text-underline-offset:3px}
 .mail{font:600 clamp(18px,3vw,22px)/1.2 var(--body);user-select:all;word-break:break-all}
 button{font:600 14px/1 var(--body);background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:10px 16px;cursor:pointer}
 button:focus-visible,a:focus-visible{outline:3px solid var(--toy);outline-offset:3px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:10px}
+@media (max-width:560px){.stats{grid-template-columns:minmax(0,1fr)}}
+.stat{border:1px solid #3a4049;border-radius:14px;padding:14px 16px;display:grid;gap:4px}
+.stat b{font:800 clamp(28px,5vw,38px)/1 var(--display);letter-spacing:-.01em;color:var(--coat-ink);font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:#c9ced5;line-height:1.35}
+.asof{font-size:12px;color:#8d96a2;margin:0}
 footer{color:var(--muted);font-size:13px}
 </style>
 </head>
@@ -85,6 +91,12 @@ footer{color:var(--muted);font-size:13px}
       <span class="tag">Edited or raw clips</span>
       <span class="tag">Dog products</span>
     </div>
+    <div class="stats" aria-label="Channel reach">
+      <div class="stat"><b>34K+</b><span>YouTube Shorts views in the last 28 days</span></div>
+      <div class="stat"><b>120+</b><span>YouTube subscribers, growing every week</span></div>
+      <div class="stat"><b>7.6K</b><span>views on the top Short</span></div>
+    </div>
+    <p class="asof">Updated November 2026</p>
   </div>
 </header>
 
@@ -158,7 +170,7 @@ footer{color:var(--muted);font-size:13px}
           <div><dt>Also loves</dt><dd>Sunbathing, naps, treats</dd></div>
           <div><dt>Posts on</dt><dd><a href="https://www.tiktok.com/@speedybumi" target="_blank" rel="noopener">TikTok @speedybumi</a></dd></div>
           <div><dt></dt><dd><a href="https://www.youtube.com/@speedybumi" target="_blank" rel="noopener">YouTube @speedybumi</a></dd></div>
-          <div><dt>Top Short</dt><dd>7K+ views</dd></div>
+          <div><dt>Posting</dt><dd>New Short every day</dd></div>
         </dl>
       </div>
     </section>
