@@ -59,6 +59,9 @@ figcaption span{color:var(--muted);font-size:14px}
 .facts div{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-block:9px}
 .facts dt{color:var(--muted)} .facts dd{margin:0;text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
 a{color:var(--toy);text-underline-offset:3px}
+.meet{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:32px;align-items:center}
+.meet .sub{margin-bottom:16px}
+@media (max-width:640px){.meet{grid-template-columns:minmax(0,1fr)}.meet figure{max-width:320px;width:100%;margin:0 auto}}
 .contact{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;display:grid;gap:12px}
 .mailrow{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
 .mail{font:600 clamp(18px,3vw,22px)/1.2 var(--body);user-select:all;word-break:break-all}
@@ -74,9 +77,9 @@ footer{color:var(--muted);font-size:13px}
   <div class="wrap">
     <div class="eyebrow">Pet UGC creator · New Jersey, USA</div>
     <h1>Bumi</h1>
-    <p class="lede">A real black lab mix testing real products. Short vertical videos for pet brands: toy tests, treat reactions and cozy at-home moments, filmed and edited by his owner, Marco.</p>
+    <p class="lede">A real black lab mix testing real products. Short vertical videos for pet brands: toy tests, mealtime, walks and cozy at-home moments, filmed and edited by his owner, Marco.</p>
     <div class="tags">
-      <span class="tag">Faceless or hands-only</span>
+      <span class="tag">On camera or faceless</span>
       <span class="tag">English &amp; Spanish</span>
       <span class="tag">9:16 vertical</span>
       <span class="tag">Edited or raw clips</span>
@@ -87,21 +90,48 @@ footer{color:var(--muted);font-size:13px}
 
 <main>
   <div class="wrap">
+    <section class="meet">
+      <figure>
+        <div class="phone"><video src="videos/meet-bumi.mp4" poster="videos/meet-bumi.jpg" controls playsinline preload="none"></video></div>
+      </figure>
+      <div>
+        <h2>Meet Bumi</h2>
+        <p class="sub">Sound on. Marco and Bumi on camera: natural talking-to-camera and voiceover, with captions. Available in English or Spanish.</p>
+        <dl class="facts">
+          <div><dt>Age</dt><dd>6 years</dd></div>
+          <div><dt>Personality</dt><dd>Lazy, picky, very honest</dd></div>
+          <div><dt>Favorite things</dt><dd>Fetch, naps, treats</dd></div>
+        </dl>
+      </div>
+    </section>
+
     <section>
       <h2>Sample ads</h2>
-      <p class="sub">Tap to play. Each is about 12 seconds: a hook in the first 2 seconds, the product in use, then a clear payoff line. Shot on iPhone with no music, so your team can add its own sound.</p>
+      <p class="sub">Tap to play. Each runs 11 to 14 seconds: a hook in the first 2 seconds, the product or moment in use, then a clear payoff line. Shot on iPhone with no music, so your team can add its own sound.</p>
       <div class="reel">
         <figure>
           <div class="phone"><video src="videos/bacon-bone.mp4" poster="videos/bacon-bone.jpg" controls playsinline muted preload="none"></video></div>
           <figcaption><span class="kind toy">Product demo · Chew toy</span><strong>The bacon-scented bone</strong><span>Grip and tug-of-war shown up close, ending on "he won't give it back."</span></figcaption>
         </figure>
         <figure>
-          <div class="phone"><video src="videos/treat-ritual.mp4" poster="videos/treat-ritual.jpg" controls playsinline muted preload="none"></video></div>
-          <figcaption><span class="kind treat">Reaction · Treats</span><strong>The treat ritual</strong><span>A step-by-step format built around his real habit of rolling on every good treat.</span></figcaption>
+          <div class="phone"><video src="videos/walk-time.mp4" poster="videos/walk-time.jpg" controls playsinline muted preload="none"></video></div>
+          <figcaption><span class="kind toy">Lifestyle · Leash and gear</span><strong>Walk time</strong><span>From "said the word walk once" to leash on and out the door. Built for leashes, collars and trackers.</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><video src="videos/mealtime.mp4" poster="videos/mealtime.jpg" controls playsinline muted preload="none"></video></div>
+          <figcaption><span class="kind treat">Routine · Food and bowls</span><strong>Mealtime</strong><span>The stare, the scoop, gone in seconds, then a funny side-eye at the camera.</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><video src="videos/doormat.mp4" poster="videos/doormat.jpg" controls playsinline muted preload="none"></video></div>
+          <figcaption><span class="kind toy">Routine · Home</span><strong>A quick paws on the mat</strong><span>Every walk ends on the doormat. Made for mats, rugs and home-care brands.</span></figcaption>
         </figure>
         <figure>
           <div class="phone"><video src="videos/cozy-blanket.mp4" poster="videos/cozy-blanket.jpg" controls playsinline muted preload="none"></video></div>
           <figcaption><span class="kind toy">Problem / solution · Comfort</span><strong>The blanket thief</strong><span>Owner problem first ("he steals my blankets"), then the fix: get him his own.</span></figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><video src="videos/treat-ritual.mp4" poster="videos/treat-ritual.jpg" controls playsinline muted preload="none"></video></div>
+          <figcaption><span class="kind treat">Reaction · Treats</span><strong>The treat ritual</strong><span>A step-by-step format built around his real habit of rolling on every good treat.</span></figcaption>
         </figure>
       </div>
     </section>
